@@ -20,7 +20,7 @@ class Solution(object):
         while n!= 1:
             n = square(n)
             counter = counter + 1
-            if counter > 100:
+            if counter > 10:
                 flag = 0
                 break
             # print (n)
