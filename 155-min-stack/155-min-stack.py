@@ -14,6 +14,7 @@ class MinStack(object):
         # as we have to keep the complexity as O(1) we will push the new value and minimum value of the stack in each push
         m = val
         if self.stack:
+            # this looks at the minimum value before each push and the new minimum value 
             m = min(m, self.stack[-1][1])
         self.stack.append([val,m])
             
